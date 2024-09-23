@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+/*Header*/
+#App-header, #App-footer{
+  background-color: #00adff;
+}
+
+#main{
+  min-height: 1024px;
+}
