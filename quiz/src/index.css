@@ -3,10 +3,76 @@ body {
 }
 
 /*Header*/
-#App-header, #App-footer{
+#App-header,
+#App-footer {
   background-color: #00adff;
 }
 
-#main{
+#logo {
+  padding-left: 20px;
+}
+
+#main {
   min-height: 1024px;
+}
+
+/*Index*/
+#title {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  max-width: 850px;
+  transform: translate(62%);
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.th{
+  font-weight: bold;
+}
+
+.user{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.button-user{
+  padding: 10px;
+  width: 150px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+.login{
+  background-color: #00adff;
+}
+.login:hover{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.registration{
+  background-color: white;
+  border: 2px solid #00adff;
+}
+.registration:hover{
+  background-color: #00adff;
+  box-shadow: 2px 2px 2px 2px black;
 }
