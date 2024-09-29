@@ -1,18 +1,24 @@
 const express = require("express");
 const sql = require("mssql");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-// SQL Server configuration
+app.use(cors())
+
+app.use(express.json())
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
 var config = {
-    "user": "TONI-PC", // Database username
-    "port": 1443, // Database password
-    "server": "TONI-PC", // Server IP address
-    "database": "Kviz",
-    "driver": "msnodesqlv8", // Database name
+    "user": "", // Database username
+    "password": "", // Database password
+    "server": "TONI-PC",// Server IP address
+    "database": "Kviz", // Database name
     "options": {
         "encrypt": false,
-        trustedConnection: true // Disable encryption
+        "port": 3001 // Disable encryption
     }
 }
 
@@ -20,7 +26,6 @@ var config = {
 sql.connect(config, err => {
     if (err) {
         throw err;
-        
     }
     console.log("Connection Successful!");
 });
@@ -28,7 +33,7 @@ sql.connect(config, err => {
 // Define route for fetching data from SQL Server
 app.get("/", (request, response) => {
     // Execute a SELECT query
-    new sql.Request().query("SELECT * FROM questions", (err, result) => {
+    new db.Request().query("SELECT * FROM questions", (err, result) => {
         if (err) {
             console.error("Error executing query:", err);
         } else {
@@ -39,6 +44,6 @@ app.get("/", (request, response) => {
 });
 
 // Start the server on port 3000
-app.listen(3000, () => {
-    console.log("Listening on port 3000...");
+app.listen(3001, () => {
+    console.log("Listening on port 3001...");
 });
