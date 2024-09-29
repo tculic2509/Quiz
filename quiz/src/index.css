@@ -1,15 +1,18 @@
 body {
   margin: 0;
+  background-image: url("./Picture//slika.jpg");
+  height: 100vh;
+}
+#App-header,
+#App-footer {
+  background-color: rgba(0, 173, 255, 0.5);
+  
 }
 
 /*Header*/
-#App-header,
-#App-footer {
-  background-color: #00adff;
-}
-
 #logo {
   padding-left: 20px;
+  opacity: 1;
 }
 
 #main {
@@ -41,9 +44,17 @@ body {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  background-color: #a9d6eb;
 }
 .th{
   font-weight: bold;
+  background-color: #00adff;
+  color: white;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 .border-left-radius{
   border-top-left-radius: 12px;
@@ -63,7 +74,9 @@ body {
   margin-bottom: 40px;
   border: none;
   border-radius: 8px;
-
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   cursor: pointer;
 }
 .login{
@@ -80,4 +93,9 @@ body {
 .registration:hover{
   background-color: #00adff;
   box-shadow: 2px 2px 2px 2px black;
+}
+
+/*footer*/
+#App-footer{
+  margin-top: 300px;
 }
