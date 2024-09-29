@@ -8,9 +8,9 @@ function App() {
     <div id="App">
       <h1 id="title">QUIZ APP</h1>
         <div class="grid-container">
-          <div class="grid-item th">ID</div>
+          <div class="grid-item th border-left-radius">ID</div>
           <div class="grid-item th">Player</div>
-          <div class="grid-item th">Score</div>
+          <div class="grid-item th border-right-radius">Score</div>
           <div class="grid-item"></div>
           <div class="grid-item"></div>
           <div class="grid-item"></div>

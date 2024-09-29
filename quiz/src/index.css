@@ -45,7 +45,12 @@ body {
 .th{
   font-weight: bold;
 }
-
+.border-left-radius{
+  border-top-left-radius: 12px;
+}
+.border-right-radius{
+  border-top-right-radius: 12px;
+}
 .user{
   display: flex;
   justify-content: center;
