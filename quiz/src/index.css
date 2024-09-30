@@ -21,7 +21,7 @@ body {
 
 /*Index*/
 #title {
-  font-size: 60px;
+  font-size: 80px;
   text-align: center;
   font-family: "Honk", system-ui;
   font-optical-sizing: auto;
@@ -93,6 +93,28 @@ body {
 .registration:hover{
   background-color: #00adff;
   box-shadow: 2px 2px 2px 2px black;
+}
+
+/*highscore*/
+select{
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 30px;
+  align-self: center;
+}
+#sort{
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#sort>p{
+  padding-right: 20px;
 }
 
 /*footer*/
